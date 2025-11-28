@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 9)), url('img/fundo.jpg');
+            background-position: center;
+        }
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <title>Listagem de usuários</title>
+</head>
+
+<body>
+</body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="principal.html">INÍCIO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown" style="justify-content: space-between;">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        CADASTROS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="cadastro_usuario.html">Usuário</a></li>
+                        <li><a class="dropdown-item" href="cadastro_cliente.html">Cliente</a></li>
+                        <li><a class="dropdown-item" href="cadastro_produto.html">Produto</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        LISTAGENS
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="listar_usuarios.html">Usuários</a></li>
+                        <li><a class="dropdown-item" href="listar_clientes.html">Clientes</a></li>
+                        <li><a class="dropdown-item" href="listar_produtos.html">Produtos</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+            <div>
+                <a class="btn btn-outline-danger" href="index.html">LOG OUT</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<h1
+    style="margin-top: 2rem;text-align: center; color: aliceblue;font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;">
+    LISTAGEM DE USUÁRIOS</h1>
+
+<div style="height: fit-content;width: 100%;justify-items: center;color: aliceblue;">
+    <div class="card" style="width: 80%; margin: 10px;">
+        <div class="card-body">
+            LISTAGEM DE USUÁRIOS
+            <button type="submit" class="btn btn-secondary"><i class="bi bi-file-earmark-plus"></i></button>
+        </div>
+    </div>
+    <div class="card" style="width: 80%; margin: 10px;">
+        <div class="card-body">
+            <h5 class="card-title">PESQUISAR</h5>
+            <p class="card-text" style="margin: 0;">Nome</p>
+            <input class="form-control form-control-lg" type="text" aria-label=".form-control-lg example"
+                style="margin-top: 1px;margin-bottom: 6px;">
+            <a href="#" class="btn btn-secondary"><i class="bi bi-search"></i>Pesquisar</a>
+        </div>
+    </div>
+</div>
+<div style="width: 80%; margin: auto;">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Email</th>
+                <th scope="col">Ativo</th>
+                <th scope="col">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Ana Souza</td>
+                <td>ana.souza123@gmail.com</td>
+                <td>Sim</td>
+                <td><a class="btn btn-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                    <a class="btn btn-danger" href="#"><i class="bi bi-trash3"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Carlos Oliveira</td>
+                <td>carlos.oliveira456@yahoo.com</td>
+                <td>Sim</td>
+                <td><a class="btn btn-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                    <a class="btn btn-danger" href="#"><i class="bi bi-trash3"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Fernanda Lima</td>
+                <td>fernanda.lima789@hotmail.com</td>
+                <td>Sim</td>
+                <td><a class="btn btn-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                    <a class="btn btn-danger" href="#"><i class="bi bi-trash3"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Pedro Costa</td>
+                <td>pedro.costa101@outlook.com</td>
+                <td>Sim</td>
+                <td><a class="btn btn-warning" href="#"><i class="bi bi-pencil-square"></i></a>
+                    <a class="btn btn-danger" href="#"><i class="bi bi-trash3"></i></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</html>
